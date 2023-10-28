@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tipcal.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h4>ITMD541 - Lab03 - PRINCEKUMAR DOBARIYA</h4>
+        <h1>Tip Calculator</h1>
+        <form id="tipForm">
+            <div class="form-group">
+                <label for="billTotal">Bill Total</label>
+                <input type="number" id="billTotal" name="billTotal" step="0.01" placeholder="Enter the bill total" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tip">Tip Percentage</label>
+                <div class="range-container">
+                    <input type="range" id="tip" name="tip" min="0" max="100">
+                    <span id="tipPercentageDisplay" class="tip-percentage">0%</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tipPercentage">Tip Percentage</label>
+                <input type="text" id="tipPercentage" name="tipPercentage" disabled>
+            </div>
+
+            <div class="form-group">
+                <label for="tipAmount">Tip Amount</label>
+                <input type="text" id="tipAmount" name="tipAmount" disabled>
+            </div>
+
+            <div class="form-group">
+                <label for="totalWithTip">Total Bill with Tip</label>
+                <input type="text" id="totalWithTip" name="totalWithTip" disabled>
+            </div>
+        </form>
+    </div>
+    <script src="Tipcal.js"></script>
+</body>
+</html>
